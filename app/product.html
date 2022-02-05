@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pro Ломбард</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+  <ul class="menu ul-my">
+    <li><a href="index.html">главная</a></li>
+    <li><a href="#">Залог техники</a></li>
+    <li><a href="#">залог золота</a></li>
+    <li><a href="#">реализация</a></li>
+    <li><a href="contacts.html">контакты</a></li>
+  </ul>
+  <div class="header-col">
+    <a href="#" class="header-links">
+      <span class="header-links__icon"><img src="img/user.png" alt=""></span>
+      <span class="header-links__text">Регистрация</span>
+    </a>
+    <a href="#" class="header-links">
+      <span class="header-links__icon"><img src="img/login.png" alt=""></span>
+      <span class="header-links__text">Личный кабинет</span>
+    </a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="header-wrapper">
+            <div class="col-12 col-md-8 col-lg-9 d-none d-md-block">
+              <div class="address-slider">
+                <div class="slide">
+                  <div class="address-box">
+                    <a href="tel:+79103680488" class="phone">+7 910 368 04 88</a>
+                    <div class="address-name">м-н Юбилейный, 7</div>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="address-box">
+                    <a href="tel:+79194351810" class="phone">+7 919 435 18 10</a>
+                    <div class="address-name">ул. Ленина, 40</div>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="address-box">
+                    <a href="tel:+79194353636" class="phone">+7 919 435 36 36</a>
+                    <div class="address-name">м-н Юлимпийский, 56</div>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="address-box">
+                    <a href="tel:+79103680488" class="phone">+7 910 368 04 88</a>
+                    <div class="address-name">м-н Юбилейный, 7</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="location">
+                <p>Ваш город:</p>
+                <a href="#" class="city">
+                  <span class="location-icon"><img src="img/marker.png" alt=""></span>
+                  <span class="location-text">Старый Оскол</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <ul class="menu ul-my">
+            <li><a href="index.html">главная</a></li>
+            <li><a href="#">Залог техники</a></li>
+            <li><a href="#">залог золота</a></li>
+            <li><a href="#">реализация</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+          </ul>
+          <div class="header-col">
+            <a href="#" class="header-links">
+              <span class="header-links__icon"><img src="img/user.png" alt=""></span>
+              <span class="header-links__text">Регистрация</span>
+            </a>
+            <a href="#" class="header-links">
+              <span class="header-links__icon"><img src="img/login.png" alt=""></span>
+              <span class="header-links__text">Личный кабинет</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-8 col-md-5 col-lg-4">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="col-4 col-md-7 col-lg-8 d-flex align-items-center">
+          <div class="search-wrapper">
+            <form method="post" class="form-search">
+              <label>
+                <input type="text" placeholder="Поиск по объявлениям" name="search">
+              </label>
+              <button type="submit" class="button-search"><img src="img/search.png" alt=""></button>
+            </form>
+
+            <div class="btn-search"><img src="img/search.png" alt=""></div>
+          </div>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- HEADER end -->
+
+
+<!-- SECTION  -->
+<div class="page page-product">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="page-navigation">
+          <div class="dropdown">
+            <button class="btn btn-border dropdown-toggle" type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="dropdown-toggle__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span class="dropdown-toggle__text">КАТАЛОГ</span>
+            </button>
+            <div class="dropdown-menu">
+              <ul class="dropdown-menu-list ul-my">
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/smart-watch.png" alt=""></span>
+                    <span class="category-menu__text">Смартфоны / телефоны</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/laptop.png" alt=""></span>
+                    <span class="category-menu__text">Компьютерная техника</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/washing-machine.png" alt=""></span>
+                    <span class="category-menu__text">Бытовая техника</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/smart-watch.png" alt=""></span>
+                    <span class="category-menu__text">Смарт-часы / гаджеты</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/drill.png" alt=""></span>
+                    <span class="category-menu__text">Строительство и ремонт</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/jewelry.png" alt=""></span>
+                    <span class="category-menu__text">Ювелирные украшения</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/games.png" alt=""></span>
+                    <span class="category-menu__text">Игры и приставки</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/camera.png" alt=""></span>
+                    <span class="category-menu__text">Фото и оптика</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/tourism.png" alt=""></span>
+                    <span class="category-menu__text">Туризм и отдых</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/toys.png" alt=""></span>
+                    <span class="category-menu__text">Детские товары</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <nav class="breadcrumb-nav">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item"><a href="catalog.html">Каталог продукции</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Смартфоны / телефоны</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="product-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Мобильный телефон REALME C11 2021 2/32GB</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-7">
+          <div class="product-slider">
+            <div class="slide">
+              <div class="product-slider__item"><img src="img/prod1.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider__item"><img src="img/prod2.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider__item"><img src="img/prod3.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider__item"><img src="img/prod4.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-2">
+          <div class="product-preview">
+            <div class="slide">
+              <div class="product-preview__item"><img src="img/prod1.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-preview__item"><img src="img/prod2.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-preview__item"><img src="img/prod3.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-preview__item"><img src="img/prod4.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="product-info">
+            <div class="product-info__price">34 990 <span class="rub">q</span></div>
+            <div class="article"><strong>Артикул:</strong> 18600402</div>
+
+            <div class="condition">
+              <strong>Состояние:</strong>
+
+              <p>Отличное <span class="btn-tooltip" data-toggle="tooltip" data-placement="top" title="Подсказка вверху"><img
+                  src="img/question.png"
+                  alt=""></span></p>
+            </div>
+
+            <div class="address-shop">
+              <p>Товар находится в магазине:</p>
+              <div class="address-shop-name">г. Старый Оскол, м-н Олимпийский, 56</div>
+              <a href="tel:+79194353636" class="shop-phone">
+                <span class="shop-phone__icon"><img src="img/telephone.png" alt=""></span>
+                <span class="shop-phone__text">+7 919 435-36-36</span>
+              </a>
+            </div>
+
+            <a href="contacts.html" class="links-map color-white text-decoration">Показать на карте</a>
+
+            <div class="schedule-shop">
+              <strong>Время работы магазина:</strong>
+
+              <p>Пн-Сб — с 9:00 до 20:00</p>
+              <p>Выходной — воскресенье</p>
+              <p>Перерыв — с 13:00 до 14:00</p>
+            </div>
+
+            <a href="#" class="btn btn-border btn-book">
+              <span class="btn-icon"><img src="img/check.png" alt=""></span>
+              <span class="btn-text">ЗАБРОНИРОВАТЬ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <div class="product-details-info product-details-description">
+            <h3>Описание / характеристики</h3>
+            <div class="box-text">
+              <p>Realme C11 2021 - это идеальный баланс цены, качества и технологий. Яркий и практичный, смартфон
+                наделён всеми необходимыми технологиями, которые будут доступны только вам. Яркий и выделяющийся
+                дисплей. Realme C11 имеет IPS-экран с разрешением HD+ и максимальными показателями яркости и
+                контрастности на уровне OLED-экранов. Благодаря ним дисплей смартфона выдаёт яркую и насыщенную
+                картинку, которая не может не радовать глаз.</p>
+
+              <p>Мощная камера для ярких моментов! <br>
+                AI-камера 8МП с разрешением видеосъёмки 1080Р и режимом HDR - лучшее сочетание для создания незабываемых
+                снимков и видео. A с АI-селфи камерой 5МП ваши портреты выйдут на новый уровень качества и детализации.
+              </p>
+
+              <p>Смартфон Realme С11 работает на базе с операционной системы Android 11, с которой удаётся значительно
+                сократить время загрузки приложений и повысить общую эффективность использования системных ресурсов.
+                Работы хватит надолго. Смартфон оснащён современным аккумулятором 5000 мАч, который обеспечит вам
+                непрерывную работу в режиме разговора и использования приложений на много часов. С полноценной зарядкой
+                всего за час вы всегда будете оставаться на связи и спокойно продолжать заниматься своими делами.</p>
+            </div>
+
+            <a href="#" class="links-toggle color-white text-decoration">Показать ещё</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="product-details-info product-details-equipment">
+            <h3>Комплектация</h3>
+            <ul class="ul-my">
+              <li>— Мобильный телефон Realme C11</li>
+              <li>— Фирменная упаковка (коробка)</li>
+              <li>— Документация</li>
+              <li>— Зарядное утройство</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SECTION  -->
+  <div class="products section-slider recommended-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-sm-7">
+          <h3>Вас также может заинтересовать</h3>
+        </div>
+        <div class="col-12 col-sm-5 d-none d-sm-flex">
+          <div class="slider-nav"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="products-slider slider-my">
+            <div class="slide">
+              <div class="products-card">
+                <div class="products-card-inner">
+                  <a href="product.html" class="products-card__img"><img src="img/product8.jpg" alt=""></a>
+                  <div class="products-card__body">
+                    <a href="product.html" class="products-card__name">
+                      <span>Болгарка</span>
+                      Зубр УШМ-П230-2400 ПВ
+                    </a>
+
+                    <div class="price">4 490 <span class="rub">q</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="products-card">
+                <div class="products-card-inner">
+                  <a href="product.html" class="products-card__img"><img src="img/product9.jpg" alt=""></a>
+                  <div class="products-card__body">
+                    <a href="product.html" class="products-card__name">
+                      <span>Лобзик</span>
+                      Союз ЛБС-4050
+                    </a>
+
+                    <div class="price">1 690 <span class="rub">q</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="products-card">
+                <div class="products-card-inner">
+                  <a href="product.html" class="products-card__img"><img src="img/product10.jpg" alt=""></a>
+                  <div class="products-card__body">
+                    <a href="product.html" class="products-card__name">
+                      <span>Болгарка</span>
+                      STANLEY SL209
+                    </a>
+
+                    <div class="price">4 990 <span class="rub">q</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="products-card">
+                <div class="products-card-inner">
+                  <a href="product.html" class="products-card__img"><img src="img/product11.jpg" alt=""></a>
+                  <div class="products-card__body">
+                    <a href="product.html" class="products-card__name">
+                      <span>Плиткорез</span>
+                      Союз 6200101С
+                    </a>
+
+                    <div class="price">1 490 <span class="rub">q</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="products-card">
+                <div class="products-card-inner">
+                  <a href="product.html" class="products-card__img"><img src="img/product8.jpg" alt=""></a>
+                  <div class="products-card__body">
+                    <a href="product.html" class="products-card__name">
+                      <span>Болгарка</span>
+                      Зубр УШМ-П230-2400 ПВ
+                    </a>
+
+                    <div class="price">4 490 <span class="rub">q</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- SECTION  END -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <a href="index.html" class="text-decoration color-white links-prev">Вернуться назад</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SECTION  END -->
+
+<!-- FOOTER  -->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="footer-col">
+            <h3>Компания</h3>
+            <ul class="footer-menu ul-my">
+              <li><a href="about.html">О Ломбарде</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="#">Наши вакансии</a></li>
+              <li><a href="#">Политика</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-3">
+          <div class="footer-col footer-col-center">
+            <h3>Информация</h3>
+            <ul class="footer-menu ul-my">
+              <li><a href="#">Оптовым клиентам</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Возврат продукции</a></li>
+              <li><a href="#">Ремонт техники</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-4">
+          <div class="footer-col">
+            <h3>Помощь</h3>
+            <ul class="footer-menu ul-my">
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Как сделать заказ</a></li>
+              <li><a href="#">Самые частые вопросы</a></li>
+              <li><a href="#">Безопасность</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="footer-contacts">
+            <h3>Наши контакты</h3>
+
+            <div class="contacts-box">
+              <a href="mailto:info@lombard-oskol.ru" class="mail">info@lombard-oskol.ru</a>
+              <p>Телефон горячей линии «Ломбард»</p>
+              <a href="tel:+78000000000" class="tel">8 800 000 00 00</a>
+              <a href="contacts.html" class="links">Адреса магазинов</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 col-lg-5">
+          <div class="copyright">
+            <p>© 2022 ООО «Ломбард «Цифровая техника»</p>
+            <p>Все права защищены</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4">
+          <a href="#" class="links" target="_blank">Пользовательское соглашение</a>
+          <a href="#" class="links" target="_blank">Политика конфиденциальности</a>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3">
+          <ul class="list-social ul-my">
+            <li>
+              <a href="#"><img src="img/instagram.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/facebook.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/vk.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/youtube.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</footer>
+
+<!-- FOOTER END -->
+
+<script src="js/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,394 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .container
+    padding: 0 24px
+
+  .footer-col-center
+    padding: 0
+
+  .tel
+    font-size: 20px
+
+  .category-products
+    padding: 0 0 0 10px
+
+  .menu li a
+    min-width: 150px
+    max-width: 150px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .footer-top
+    padding: 38px 0 42px
+
+  .map
+    height: 400px
+
+  .footer-contacts
+    text-align: left
+
+  .footer-col
+    margin: 0 0 40px
+
+  .footer-top
+    padding: 43px 0 0
+
+  .form-row
+    margin: 15px 0 0
+
+  .callback-img
+    right: 0
+    max-width: 346px
+
+  .profitable-loan
+    width: 100%
+    margin: 0 0 39px
+    border: none
+    padding: 0
+
+  .news-products-title
+    padding: 0
+
+  .section-slider
+    overflow: visible
+
+  .header-center
+    display: none
+
+  .form-search
+    display: none
+    width: 100%
+    min-width: 280px
+    position: absolute
+    right: 0
+    top: -10px
+
+  .btn-burger
+    display: flex
+
+  .btn-search
+    display: flex
+
+  .search-wrapper
+    width: fit-content
+    margin: 0 17px 0 auto
+
+  .header-bottom
+    margin: 17px 0 0
+
+  .phone-company
+    font-size: 18px
+
+  .advantages-box
+    width: 20%
+
+  .about-img
+    margin: 20px auto 0
+
+  .about
+    .box-text
+      max-width: none
+
+  .documents-box
+    padding: 20px
+    h3
+      font-size: 16px
+
+  .product-preview
+    margin: 20px 0
+    height: auto
+    &:before
+      display: none
+    .slick-arrow
+      top: 50%
+      bottom: auto
+      transform: translate(0,-50%)
+      img
+        transform: none
+    .slick-prev
+      left: -10px
+      right: auto
+    .slick-next
+      right: -10px
+      left: auto
+    .slick-slide
+      padding: 0 5px
+      margin: 0
+
+  .product-preview__item
+    height: 200px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  .product-info
+    padding: 0
+
+  .btn-book
+    margin: 20px 0 0
+
+  .product-details-info
+    margin: 30px 0 0
+    h3
+      margin: 0 0 20px
+
+  .links-map
+    margin: 20px 0
+
+@media only screen and (max-width: 768px)
+  .tel
+    font-size: 25px
+
+  .copyright
+    text-align: center
+    margin: 0 auto 30px
+
+  .footer-bottom
+    padding: 26px 0 30px
+    .links
+      margin: 0 auto 15px
+      text-align: center
+
+  .list-social
+    justify-content: center
+    margin: 30px auto 0
+
+  .label-message
+    width: 100%
+
+  .callback
+    padding: 31px 0 23px
+
+  .callback-img
+    max-width: 245px
+    right: -10px
+    top: -100px
+
+  .form-col
+    padding: 0
+    margin: 0 auto
+
+  .consent
+    margin: 17px 0 0
+
+  .form-callback
+    button
+      width: 100%
+      max-width: 196px
+
+
+    .checkbox
+      margin: 0 0 19px
+
+  .products-card
+    height: auto
+    &-inner
+      position: relative
+    &:hover
+      .products-card-inner
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+      .products-card__img
+        height: 205px
+
+  .category-products
+    width: 100%
+    padding: 0
+
+  .profitable-loan-text
+    margin: 0 0 29px
+    max-width: none
+
+  .location
+    justify-content: flex-start
+
+  .header-top
+    background: #1b1b1b
+    padding: 15px 0
+
+  .header-wrapper
+    background: transparent
+    padding: 0
+    border-radius: 0
+
+  .address-company
+    margin: 0 0 30px
+    width: fit-content
+
+  .nav-tabs .nav-link
+    flex: auto
+    width: 33.3%
+    border: none
+    &:first-child
+      border: none
+
+  .advantages-box
+    width: 33.3%
+
+  .page-navigation
+    margin: 0 0 30px
+
+  .breadcrumb-nav
+    width: 100%
+    margin: 10px 0 0
+
+  .breadcrumb
+    margin: 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .footer-contacts
+    margin: 0 0 43px
+
+  .callback
+    background: url("../img/callback-bg-mob.jpg") no-repeat center
+      size: cover
+
+  h2
+    margin: 0 0 20px
+    font-size: 21px
+
+  .manager-text
+    margin: 0 0 19px
+
+  .manager-icon
+    display: none
+
+  .products-card
+    width: 202px
+    &__img
+      height: 153px
+    &:hover
+      .products-card__img
+        height: 153px
+
+  .callback
+    margin: 96px 0 0
+
+  .category-products-links
+    max-width: 120px
+    margin: 0 auto
+    width: 100%
+
+  .category-products
+    display: block
+    width: calc(100% + 48px)
+    margin: 0 -24px
+
+  .category-menu
+    padding: 0
+    background: transparent
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    li
+      margin: 0 0 5px
+      width: 20%
+      a
+        width: 53px
+        height: 53px
+        margin: 0 auto
+        background: #fff
+        border-radius: 50%
+        align-items: center
+        justify-content: center
+        padding: 11px
+
+  .category-menu__text
+    display: none
+
+  .category-menu__icon
+    margin: 0 auto
+
+  .sidebar
+    margin: 0 0 18px
+
+  header
+    margin: 0 0 24px
+
+  .dropdown-toggle
+    font-size: 14px
+
+  .nav-tabs .nav-link
+    width: auto
+    padding: 5px 20px
+
+  .links-prev
+    margin: 20px 0
+
+  .about
+    margin: 30px 0
+
+  .product-slider__item
+    height: 350px
+
+  h1
+    margin: 0 0 25px
+
+@media only screen and (max-width: 480px)
+  .products-card__name
+    font-size: 9px
+
+  .price
+    font-size: 15.5px
+
+  .advantages-box
+    width: 50%
+
+  .product-slider__item
+    height: 250px
+
+  .product-preview__item
+    height: 150px
+
+  .links-toggle
+    margin: 15px 0 0
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .checkbox-custom
+    width: 26px
+    height: 26px
+    min-width: 26px
+    margin: 0 13px 0 0
+
+
+  .page-catalog
+    .products-card
+      &__img
+        height: 120px
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+
+  .pagination .page-link
+    width: 30px
+    height: 30px
+    min-width: 30px
+
+  .advantages-box__icon
+    width: 110px
+    height: 110px
+    min-width: 110px
+
+  .about-img
+    width: 270px
+    height: 270px
+
+  .product-preview__item
+    height: 110px
+
+  .product-info__price
+    font-size: 30px
+
+@media only screen and (max-width: 360px)
+  .product-slider__item
+    height: 200px

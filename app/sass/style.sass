@@ -1,0 +1,487 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #333333
+  color: #fff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+    
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 20px
+  box-sizing: border-box
+  font-family: $default-font
+  border: solid 2px #fff
+    radius: 30px
+  height: 40px
+  width: 100%
+  color: #fff
+  font-size: 12px
+  font-weight: 500
+  letter-spacing: -0.12px
+  &::placeholder
+    color: rgba(255, 255, 255, 0.7)
+  &:hover
+    outline: none
+    box-shadow: none
+  
+select
+  color: #fff
+
+.select
+  appearance: none
+  -webkit-appearance: none
+  background: url("../img/arrow-bottom-white.png") no-repeat calc(100% - 16px) center
+    size: 10px
+
+textarea
+  height: 94px
+  padding: 13px 20px
+  color: rgba(255, 255, 255, 0.7)
+  border-radius: 20px
+
+label
+  display: block
+  width: 100%
+
+.checkbox
+  display: flex
+  align-items: flex-start
+  width: 100%
+  font-size: 10px
+  font-weight: 500
+
+.inp-check
+  display: none
+
+.checkbox-custom
+  border: solid 2px #fff
+    radius: 3px
+  width: 13px
+  min-width: 13px
+  height: 13px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: 2px 8px 0 0
+  
+.inp-check:checked + .checkbox-custom
+  background: #fff
+
+.form-row
+  margin: 0
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.label-message
+  width: calc(100% - 220px)
+
+.form-col
+  max-width: 220px
+  padding: 0 0 0 10px
+
+.consent
+  margin: 21px 0 0
+  color: #fff
+  font-size: 10px
+  font-weight: 500
+  mix-blend-mode: overlay
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+    radius: 0
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  letter-spacing: -0.12px
+  font-size: 12px
+  font-weight: bold
+  text-transform: uppercase
+  height: 40px
+  width: fit-content
+  padding: 0 19px
+  border-radius: 20px
+
+.btn-accent
+  color: #fff
+
+.btn-white
+  background: #fff
+  color: $brown
+  &:hover
+    background: $grey
+    color: #fff
+    .btn-icon
+      filter: brightness(0) invert(1)
+
+.btn-icon
+  max-width: 23px
+  margin: 0 8px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+
+.btn-border
+  border: solid 2px #fff
+  background: transparent
+  color: #fff
+  &:hover
+    background: $brown
+    color: #fff
+  .btn-arrow
+    margin: 0 0 0 17px
+    max-width: 10px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+.ul-my
+  list-style: none
+
+strong, b
+  display: inline-block
+  font-weight: bold
+
+h2, h1
+  width: 100%
+  font-size: 25px
+  font-weight: bold
+  margin: 0 0 23px
+
+h1
+  margin: 0 0 36px
+
+.d-inline
+  display: inline-block
+
+.text-decoration
+  text-decoration: underline
+
+.color-white
+  color: #fff
+
+a.color-white
+  &:hover
+    color: $grey
+
+.mb-30
+  margin-bottom: 30px
+
+.mb-10
+  margin-bottom: 10px
+
+.container
+  max-width: 1120px
+  padding: 0 5px
+
+.row
+  margin: 0 -5px
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto
+  padding: 0 5px
+
+.slick-slider
+  width: 100%
+
+.slick-slide
+  opacity: 1
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  width: 42px
+  height: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 1
+  opacity: 1
+  border: none
+    radius: 0
+  background: transparent
+  filter: brightness(0) invert(1)
+  transition: .3s ease
+  &:hover
+    filter: none
+
+.slick-prev
+  left: 0
+
+.slick-next
+  right: 0
+
+.slick-disabled
+  opacity: 0
+
+.slider-nav
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  .slick-arrow
+    position: relative
+    top: 0
+    right: 0
+    left: 0
+    transform: none
+  .slick-next
+    margin: 0 0 0 21px
+
+
+.rub
+  display: inline-block
+  font-family: 'ALSRubl', sans-serif
+  font-weight: normal
+
+.page-navigation
+  margin: 0 0 43px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.breadcrumb
+  padding: 0
+  border: none
+    radius: 0
+  background: transparent
+  margin: 0 0 0 28px
+  font-size: 12px
+  font-weight: 500
+  color: #fff
+  li
+    a
+      color: #fff
+      display: flex
+      align-items: center
+      &:after
+        content: '—'
+        display: inline-block
+        margin: 0 5px
+  .active
+    text-decoration: underline
+    color: #fff
+    font-weight: bold
+
+.breadcrumb-item+.breadcrumb-item::before
+  display: none
+
+.breadcrumb-item+.breadcrumb-item
+  padding: 0
+
+.dropdown-toggle
+  height: 45px
+  font-size: 16px
+  border-radius: 30px
+  &:after
+    display: none
+
+.dropdown-toggle__icon
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  width: 25px
+  min-width: 25px
+  margin: 0 18px 0 0
+  span
+    display: block
+    background: #fff
+    height: 2px
+    width: 100%
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+      width: 15px
+    &:nth-child(2)
+      width: 20px
+
+.dropdown-menu
+  min-width: 270px
+  width: 100%
+  background: #fff
+  border: none
+    radius: 0
+  padding: 25px 0
+  font-size: 12px
+  font-weight: 500
+  box-shadow: 0 0 71.3px 3.8px #000604
+
+.dropdown-menu-list
+  width: 100%
+  li
+    a
+      padding: 9px 25px
+      display: flex
+      align-items: center
+      color: #313131
+
+      &:hover
+        color: #630
+        font-weight: bold
+  &__icon
+    margin: 0 22px 0 0
+    width: 31px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.nav-tabs
+  width: 100%
+  margin: 29px 0 0
+  letter-spacing: -0.18px
+  font-size: 18px
+  border: none
+    radius: 0
+  .nav-link
+    padding: 9px 10px
+    flex: 1
+    text-align: center
+    color: #fff
+    border: none
+      radius: 0
+      right: 1px solid #fff
+    &:first-child
+      border:
+        left: 1px solid #fff
+    &.active
+      font-weight: bold
+      color: #fff
+      background: #1b1b1b
+
+.tab-content
+  padding: 44px 0 0
+
+.pagination-nav
+  margin: 20px 0 43px
+  width: 100%
+
+.pagination
+  margin: 0
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  color: #c3c3c3
+  letter-spacing: -0.12px
+  font-size: 11.5px
+  font-weight: 500
+  a
+    color: #c3c3c3
+  .page-link
+    background: transparent
+    border: 2px solid transparent
+      radius: 50%
+    width: 40px
+    height: 40px
+    min-width: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    padding: 0
+    &:hover
+      color: #fff
+  .active
+    .page-link
+      font-weight: bold
+      color: #fff
+      background: transparent
+      border-color: #fff
+  .page-link-arrow
+    border: none
+      radius: 0
+    width: 31px
+    height: 15px
+    min-width: 31px
+    img
+      filter: brightness(0) invert(1)
+
+

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pro Ломбард</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+  <ul class="menu ul-my">
+    <li><a href="index.html">главная</a></li>
+    <li><a href="#">Залог техники</a></li>
+    <li><a href="#">залог золота</a></li>
+    <li><a href="#">реализация</a></li>
+    <li><a href="contacts.html">контакты</a></li>
+  </ul>
+  <div class="header-col">
+    <a href="#" class="header-links">
+      <span class="header-links__icon"><img src="img/user.png" alt=""></span>
+      <span class="header-links__text">Регистрация</span>
+    </a>
+    <a href="#" class="header-links">
+      <span class="header-links__icon"><img src="img/login.png" alt=""></span>
+      <span class="header-links__text">Личный кабинет</span>
+    </a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="header-wrapper">
+            <div class="col-12 col-md-8 col-lg-9 d-none d-md-block">
+              <div class="address-slider">
+                <div class="slide">
+                  <div class="address-box">
+                    <a href="tel:+79103680488" class="phone">+7 910 368 04 88</a>
+                    <div class="address-name">м-н Юбилейный, 7</div>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="address-box">
+                    <a href="tel:+79194351810" class="phone">+7 919 435 18 10</a>
+                    <div class="address-name">ул. Ленина, 40</div>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="address-box">
+                    <a href="tel:+79194353636" class="phone">+7 919 435 36 36</a>
+                    <div class="address-name">м-н Юлимпийский, 56</div>
+                  </div>
+                </div>
+
+                <div class="slide">
+                  <div class="address-box">
+                    <a href="tel:+79103680488" class="phone">+7 910 368 04 88</a>
+                    <div class="address-name">м-н Юбилейный, 7</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="location">
+                <p>Ваш город:</p>
+                <a href="#" class="city">
+                  <span class="location-icon"><img src="img/marker.png" alt=""></span>
+                  <span class="location-text">Старый Оскол</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <ul class="menu ul-my">
+            <li><a href="index.html">главная</a></li>
+            <li><a href="#">Залог техники</a></li>
+            <li><a href="#">залог золота</a></li>
+            <li><a href="#">реализация</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+          </ul>
+          <div class="header-col">
+            <a href="#" class="header-links">
+              <span class="header-links__icon"><img src="img/user.png" alt=""></span>
+              <span class="header-links__text">Регистрация</span>
+            </a>
+            <a href="#" class="header-links">
+              <span class="header-links__icon"><img src="img/login.png" alt=""></span>
+              <span class="header-links__text">Личный кабинет</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-8 col-md-5 col-lg-4">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="col-4 col-md-7 col-lg-8 d-flex align-items-center">
+          <div class="search-wrapper">
+            <form method="post" class="form-search">
+              <label>
+                <input type="text" placeholder="Поиск по объявлениям" name="search">
+              </label>
+              <button type="submit" class="button-search"><img src="img/search.png" alt=""></button>
+            </form>
+
+            <div class="btn-search"><img src="img/search.png" alt=""></div>
+          </div>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- HEADER end -->
+
+
+<!-- SECTION  -->
+<div class="page page-catalog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="page-navigation">
+          <div class="dropdown">
+            <button class="btn btn-border dropdown-toggle" type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="dropdown-toggle__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span class="dropdown-toggle__text">КАТАЛОГ</span>
+            </button>
+            <div class="dropdown-menu">
+              <ul class="dropdown-menu-list ul-my">
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/smart-watch.png" alt=""></span>
+                    <span class="category-menu__text">Смартфоны / телефоны</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/laptop.png" alt=""></span>
+                    <span class="category-menu__text">Компьютерная техника</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/washing-machine.png" alt=""></span>
+                    <span class="category-menu__text">Бытовая техника</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/smart-watch.png" alt=""></span>
+                    <span class="category-menu__text">Смарт-часы / гаджеты</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/drill.png" alt=""></span>
+                    <span class="category-menu__text">Строительство и ремонт</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/jewelry.png" alt=""></span>
+                    <span class="category-menu__text">Ювелирные украшения</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/games.png" alt=""></span>
+                    <span class="category-menu__text">Игры и приставки</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/camera.png" alt=""></span>
+                    <span class="category-menu__text">Фото и оптика</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/tourism.png" alt=""></span>
+                    <span class="category-menu__text">Туризм и отдых</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="category-menu__icon"><img src="img/toys.png" alt=""></span>
+                    <span class="category-menu__text">Детские товары</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <nav class="breadcrumb-nav">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item"><a href="catalog.html">Каталог продукции</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Смартфоны / телефоны</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="col-12">
+        <h2>Смартфоны / телефоны:</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product4.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Apple iPhone XR 64GB
+              </a>
+
+              <div class="price">34 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product5.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Micromax Х406
+              </a>
+
+              <div class="price">490 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product6.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Samsung Galaxy J7 (2017) J730fm
+              </a>
+
+              <div class="price">4 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product7.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                <span>Мобильный телефон</span>
+                Samsung Galaxy A32 128GB
+              </a>
+
+              <div class="price">13 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product12.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Samsung Galaxy A50 64GB
+              </a>
+
+              <div class="price">9 490 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product13.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Alcatel 3X 5058i
+              </a>
+
+              <div class="price">3 490 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product14.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Huawei Honor 50 6/128 ГБ
+              </a>
+
+              <div class="price">26 590 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product15.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                <span>Мобильный телефон</span>
+                Huawei P30 6/128Gb
+              </a>
+
+              <div class="price">17 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product16.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Vertex Impress Luck NFC (4G)
+              </a>
+
+              <div class="price">3 590 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product17.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Apple iPhone SE-32GB
+              </a>
+
+              <div class="price">4 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product18.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Xiaomi Redmi Note 5a 2/16Gb
+              </a>
+
+              <div class="price">4 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product23.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                <span>Мобильный телефон</span>
+                Xiaomi Redmi 4x
+              </a>
+
+              <div class="price">3 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product19.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                ITEL A48
+              </a>
+
+              <div class="price">4 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product20.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Digma Linx A172
+              </a>
+
+              <div class="price">390 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product21.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Honor 7S
+              </a>
+
+              <div class="price">3 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product22.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                <span>Мобильный телефон</span>
+                REALME C11 2021 2/32GB
+              </a>
+
+              <div class="price">6 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product15.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                <span>Мобильный телефон</span>
+                Huawei P30 6/128Gb
+              </a>
+
+              <div class="price">17 990 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product14.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Huawei Honor 50 6/128 ГБ
+              </a>
+
+              <div class="price">26 590 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product12.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Samsung Galaxy A50 64GB
+              </a>
+
+              <div class="price">9 490 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="products-card">
+          <div class="products-card-inner">
+            <a href="product.html" class="products-card__img"><img src="img/product13.jpg" alt=""></a>
+            <div class="products-card__body">
+              <a href="product.html" class="products-card__name">
+                    <span>Мобильный телефон
+</span>
+                Alcatel 3X 5058i
+              </a>
+
+              <div class="price">3 490 <span class="rub">q</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <nav class="pagination-nav">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link page-link-arrow" href="#"><img src="img/arrow-left.png" alt=""></a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item active" aria-current="page"><span class="page-link">3</span></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">29</a></li>
+            <li class="page-item"><a class="page-link page-link-arrow" href="#"><img src="img/arrow-right.png" alt=""></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- SECTION  END -->
+
+
+<!-- FOOTER  -->
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="footer-col">
+            <h3>Компания</h3>
+            <ul class="footer-menu ul-my">
+              <li><a href="about.html">О Ломбарде</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="#">Наши вакансии</a></li>
+              <li><a href="#">Политика</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-3">
+          <div class="footer-col footer-col-center">
+            <h3>Информация</h3>
+            <ul class="footer-menu ul-my">
+              <li><a href="#">Оптовым клиентам</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Возврат продукции</a></li>
+              <li><a href="#">Ремонт техники</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-4">
+          <div class="footer-col">
+            <h3>Помощь</h3>
+            <ul class="footer-menu ul-my">
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Как сделать заказ</a></li>
+              <li><a href="#">Самые частые вопросы</a></li>
+              <li><a href="#">Безопасность</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+          <div class="footer-contacts">
+            <h3>Наши контакты</h3>
+
+            <div class="contacts-box">
+              <a href="mailto:info@lombard-oskol.ru" class="mail">info@lombard-oskol.ru</a>
+              <p>Телефон горячей линии «Ломбард»</p>
+              <a href="tel:+78000000000" class="tel">8 800 000 00 00</a>
+              <a href="contacts.html" class="links">Адреса магазинов</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 col-lg-5">
+          <div class="copyright">
+            <p>© 2022 ООО «Ломбард «Цифровая техника»</p>
+            <p>Все права защищены</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4">
+          <a href="#" class="links" target="_blank">Пользовательское соглашение</a>
+          <a href="#" class="links" target="_blank">Политика конфиденциальности</a>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3">
+          <ul class="list-social ul-my">
+            <li>
+              <a href="#"><img src="img/instagram.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/facebook.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/vk.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/youtube.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</footer>
+
+<!-- FOOTER END -->
+
+<script src="js/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+<script src="js/common.js"></script>
+
+</body>
+</html>
